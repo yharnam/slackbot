@@ -1,0 +1,23 @@
+{
+  "name": "tops",
+  "version": "1.0.0",
+  "description": "Custom Slackbot using Node.js",
+  "main": "src/server/service.js",
+  "scripts": {
+    "precommit": "npm run lint",
+    "lint": "eslint --fix src/**/*.js || true",
+    "start": "nodemon src/bin/run.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {
+    "@slack/client": "^3.15.0",
+    "eslint": "^4.15.0",
+    "husky": "^0.14.3"
+  }
+}
